@@ -85,6 +85,13 @@ class Quiz{
         this.pregunta = pregunta;
         this.respuesta = respuesta;
     }
+
+    mostrarRespuestas(){
+        alert(quizs.forEach(quiz => {
+            "Te mostramos las respuestas para que veas que no te mentimos:" +
+            quiz.pregunta + "\n Respuesta: " + quiz.respuesta;
+        }));
+    }
 }
 
 const quiz1 = new Quiz("¿Cuál es el nombre del hacha forjada por el calor de una estrella de neutrones moribunda para Thor?", "Rompedor de Tormenta");
@@ -111,4 +118,6 @@ while(participarQuiz()){
             alert("No había premio, solo estábamos probando tu sabiduría!")
         }
     }
+    
+    mostrarRespuestas();
 }
